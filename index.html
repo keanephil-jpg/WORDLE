@@ -100,7 +100,7 @@
       position: fixed;
       bottom: 0;
       width: 100%;
-      background: linear-gradient(180deg, #f6e7f7, #e3f2ff);
+      background: linear-gradient(180deg, #e7f7f3, #e3fff8);
       padding: 12px 0;
       display: flex;
       flex-direction: column;
@@ -434,7 +434,7 @@
         const rows = [
           "QWERTYUIOP".split(""),
           "ASDFGHJKL".split(""),
-          ["ENTER", ..."ZXCVBNM".split(""), "DEL"]
+          ["ENT", ..."ZXCVBNM".split(""), "DEL"]
         ];
 
         rows.forEach(row => {
@@ -444,7 +444,7 @@
             const keyDiv = document.createElement("div");
             keyDiv.className = "key";
             keyDiv.dataset.key = key;
-            if (key === "ENTER" || key === "DEL") keyDiv.classList.add("big");
+            if (key === "ENT" || key === "DEL") keyDiv.classList.add("big");
             keyDiv.textContent = key;
             keyDiv.onclick = () => handleKeyPress(key);
             rowDiv.appendChild(keyDiv);
@@ -606,7 +606,7 @@
       }
 
       function handleKeyPress(key) {
-        if (key === "ENTER") {
+        if (key === "ENT") {
           if (currentGuess.length < wordLength) {
             showMessage("Not enough letters.");
             return;
@@ -621,7 +621,7 @@
 
           if (guess === answer) {
             launchFireworks();
-            endGame("You got it!");
+            endGame("Cathy you're the Best!");
             return;
           }
 
