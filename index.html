@@ -128,6 +128,7 @@
       text-align: center;
       font-size: 16px;
       touch-action: manipulation;
+      border: 2px solid #000;     /* thick black border */
     }
 
     .key.correct { background: #6aaa64; color: #fff; }
@@ -135,6 +136,12 @@
     .key.absent  { background: #787c7e; color: #fff; }
 
     .key.big { min-width: 70px; }
+    .key[data-key="ENT"],
+.key[data-key="DEL"] {
+  font-size: 20px;
+  padding: 16px 14px;
+  min-width: 80px;   /* optional: wider buttons */
+}
   </style>
 </head>
 
