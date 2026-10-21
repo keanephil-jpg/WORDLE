@@ -121,14 +121,14 @@
 .key {
   background: #f2f2f2;
   color: #333;
-  padding: 12px 8px;
+  padding: 8px 4px;
   border-radius: 6px;
   font-weight: bold;
   user-select: none;
   text-transform: uppercase;
-  min-width: clamp(28px, 8vw, 40px);
+ min-width: clamp(22px, 6vw, 34px);
   text-align: center;
-  font-size: clamp(12px, 3vw, 16px);
+  font-size: clamp(11px, 2.5vw, 14px);
   touch-action: manipulation;
   border: 2px solid #000;
 }
@@ -137,8 +137,8 @@
     .key.present { background: #c9b458; color: #fff; }
     .key.absent  { background: #787c7e; color: #fff; }
 
-    .key.big {
-  min-width: clamp(55px, 14vw, 80px);
+   .key.big {
+  min-width: clamp(45px, 11vw, 65px);
 }
     .key[data-key="ENT"],
 .key[data-key="DEL"] {
@@ -165,6 +165,15 @@
   .row {
     gap: 4px;
   }
+      #keyboard {
+  padding: 6px 0;
+  gap: 4px;
+}
+
+.key-row {
+  gap: 3px;
+}
+
 }
   </style>
 </head>
