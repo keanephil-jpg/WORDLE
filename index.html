@@ -112,21 +112,22 @@
       z-index: 100;
     }
 
-    .key-row {
+    .key-row { width: 98%;
+  margin: 0 auto;
       display: flex;
       justify-content: center;
-      gap: 6px;
+      gap: 2px;
     }
 
 .key {
   background: #f2f2f2;
   color: #333;
-  padding: 8px 4px;
+  padding: 8px 3px;
   border-radius: 6px;
   font-weight: bold;
   user-select: none;
   text-transform: uppercase;
-min-width: 24px;
+min-width: 20px;
   text-align: center;
   font-size: clamp(11px, 2.5vw, 14px);
   touch-action: manipulation;
@@ -138,15 +139,15 @@ min-width: 24px;
     .key.absent  { background: #787c7e; color: #fff; }
 
  .key.big {
-  min-width: 40px;
+  min-width: 32px;
   padding-left: 6px;
   padding-right: 6px;
 }
     .key[data-key="ENT"],
 .key[data-key="DEL"] {
-  font-size: 20px;
+  font-size: 14px;
   padding: 16px 14px;
-  min-width: 80px;   /* optional: wider buttons */
+  min-width: 50px;   /* optional: wider buttons */
 }
     @media (max-width: 600px) {
 
